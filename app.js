@@ -1,4 +1,5 @@
 var scores, roundScroe, activePlayer, gamePlaying;
+var path = 'img/';
 
 init();
 
@@ -10,7 +11,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         // 2. Display the result
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'dice-' + dice + '.png';
+        diceDOM.src = path + 'dice-' + dice + '.png';
 
         // 3. Update the round scroe IF the rolled number was Not a 1
         if(dice !== 1) {
